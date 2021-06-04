@@ -1,4 +1,5 @@
 service ssh start
 service docker start
+service zerotier-one start
 
 tail -f /dev/null
