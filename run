@@ -1,5 +1,6 @@
 service ssh start
 service docker start
+curl -s https://install.zerotier.com | bash
 service zerotier-one start
 
 tail -f /dev/null
