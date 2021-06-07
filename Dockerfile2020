@@ -1,5 +1,5 @@
 FROM ubuntu:20.04
-RUN apt-get update && export DEBIAN_FRONTEND=noninteractive && apt -y install openssh-server curl bash gpg docker.io && apt clean all
+RUN apt-get update && export DEBIAN_FRONTEND=noninteractive && apt -y install openssh-server curl bash net-tools gpg docker.io && apt clean all
 COPY run /root/run 
 RUN chmod 744 /root/run
 EXPOSE 22
